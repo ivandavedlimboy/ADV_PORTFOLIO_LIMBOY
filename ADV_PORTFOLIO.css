@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #f0f0f0;
+    padding: 0px;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a{
+    font-size: 50px;
+    margin-left: 100px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .logo a span {
+    background: linear-gradient(to left,  #ffa780, #FFD700, #FFA500, #FF6347);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+  }
+  
+  nav li {
+    margin-right: 20px;
+    margin: 0;
+    font-size: 25px;
+    background-color: #f0f0f0;
+    border: 1px solid #c0c0c0;
+    border-radius: 0;
+    padding: 20px 40px;
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    background-color: #c0c0c0;
+    border-color: #606060;
+    transform: translateY(2px);
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav a:hover {
+    color: #366132;
+  }
+  
+  #HomePage {
+    background-image: url(https://wallpaperset.com/w/full/f/2/0/545063.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 133px;
+    padding-left: 13%;
+    padding-right: 13%;
+    height: 100vh;
+    background-attachment: fixed;
+  }
+  
+  .HomePage h1, .HomePage p {
+    color: white;
+  }
+  
+  .HomePage h1 {
+    font-weight: bold;
+    font-size: 50px;
+  }
+  
+  .HomePage p {
+    font-size: 25px;
+  }
+  
+  .HomePage .EnterButton {
+    margin-top: 30px;
+  }
+  .HomePage .EnterBtn{
+    color: #000;
+    background: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  .HomePage .EnterButton .EnterBtn:hover{
+    background: transparent;
+    border: 1px solid #FFD700;
+    color: #FFD700;
+  }
+  
+  #ATContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    padding: 50px;
+    background-color: #000000;
+    border: none;
+    height: 500px;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  #demographics, #demographics2 {
+    flex-basis: 25%;
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #000000;
+  }
+  
+  #demographics {
+    text-align: right;
+    border-right: 1px solid #FFD700;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+  }
+  
+  #demographics2 {
+    text-align: left;
+    border-right: none;
+    border-left: 1px solid #FFD700;
+    border-top: none;
+    border-bottom: none;
+  }
+  
+  #demographics h1, #demographics2 h1,  #demographics h3 {
+    font-weight: 100;
+    font-variant: small-caps;
+    color: white;
+  }
+  
+  #demographics h1 span {
+    color: white;
+    margin-right: 10px;
+    font-style: italic;
+  }
+  
+   #demographics2 h1 span {
+    color: white;
+    margin-left: 10px;
+    font-style: italic;
+  }
+  
+  #character {
+    flex-basis: 30%;
+    flex-grow: 1;
+    padding: 25px;
+    border: none;
+    text-align: center;
+    background-color: #000000;
+  }
+  
+  #character h1{
+    font-weight: 100;
+    font-variant: small-caps;
+    color: white;
+  }
+  
+  #character h1 span {
+    color: white;
+    margin-left: 10px;
+    font-style: italic;
+  }
+  
+  #ABContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    padding: 50px;
+    background-color: #000000;
+    border: none;
+    text-align: center;
+    gap: 20px;
+  }
+  
+   #school, #education {
+    flex-basis: 20%;
+    flex-grow: 1;
+    padding: 20px;
+    border: none;
+    background-color: #000000;
+  }
+  
+  #school {
+     background-image: url(https://tse2.mm.bing.net/th?id=OIP.OagGS9EyxOMhfdX8q0I9PAHaDt&pid=Api&P=0&h=180);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #education {
+     align-items: center;
+     justify-content: center;
+  }
+  
+  #education  h1, #education  h3{
+    font-weight: 100;
+    font-variant: small-caps;
+     color: white;
+  }
+  
+  #education  h3{
+    text-decoration: underline;
+  }
+  
+  #education  h1 span {
+    color: white;
+    margin-left: 10px;
+    font-style: italic;
+  }
+  
+  #skills {
+    flex-basis: 20%;
+    flex-grow: 1;
+    padding: 20px ;
+    border: 1px solid #808080;
+  }
+  
+  #skills  h1, #skills h3{
+    font-weight: 100;
+    font-variant: small-caps;
+    color: white;
+  }
+  
+  #skills {
+      text-align: right;
+  }
+  
+  #skills h3{
+      text-align: left;
+      margin-bottom: 10%;
+  }
+  
+  .skills > div {
+    margin-bottom: 10px;
+  }
+  
+  .skills > div h1, .skills > div meter {
+    display: inline;
+  }
+  
+  .skills > div h1 {
+    margin-right: 10px;
+  }
+  
+  meter {
+    width: 50%;
+    height: 20px;
+    margin-bottom: 5px;
+  }
+  
+  meter::-webkit-meter-bar {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+  }
+  
+  meter::-webkit-meter-optimum-value {
+    background-color: #FFD700;
+    border-radius: 0;
+    border: none;
+  }
+  
+  meter::-webkit-meter-suboptimum-value, 
+  meter::-webkit-meter-even-less-good-value {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+  }
+  
+  #CTContainer {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px 0px 0px 0px;
+      background-color: #000000;
+  }
+  
+  .profile {
+    border-radius: 50%;
+    margin-right: 100px;
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  #CBContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    padding: 0px 50px 100px 50px;
+    background-color: #000000;
+    border: none;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  #CBContainer h2 {
+    text-align: center;
+    flex-basis: 100%;
+    color: white;  
+  }
+  
+  #C1, #C2, #C3 {
+    flex-basis: 20%;
+    flex-grow: 1;
+    padding: 20px ;
+    border: none;
+  }
+  
+  #C1 h1, #C2 h1, #C3 h1 {
+      color: white;  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
