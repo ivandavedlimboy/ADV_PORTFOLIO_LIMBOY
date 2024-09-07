@@ -1,4 +1,4 @@
-
+/*page-switcher js var decleration*/
 const homePage = document.getElementById('HomePage');
 const contactPage = document.getElementById('ContactPage');
 const aboutPage = document.getElementById('AboutPage');
@@ -7,6 +7,8 @@ const aboutButton = document.getElementById('About');
 const contactButton = document.getElementById('Contact');
 const EnterButton = document.getElementById('EnterBtn');
 
+
+/*page-switcher js var functiona*/
 function showHomePage() {
   homePage.style.display = 'block';
   aboutPage.style.display = 'none';
@@ -58,3 +60,30 @@ EnterButton.addEventListener('click', (event) => {
 });
 
 showHomePage();
+
+
+/*color-scheme-witcher js var decleration*/
+const circleButton = document.querySelector('.circle-button1');
+const slider = document.querySelector('input[type="checkbox"]');
+
+
+/*color-scheme-witcher js var function*/
+slider.addEventListener('change', () => {
+  if (slider.checked) {
+    
+    document.body.classList.add('dark-theme');
+    document.body.classList.remove('light-theme');   
+
+  } else {
+    
+    document.body.classList.add('light-theme');
+    document.body.classList.remove('dark-theme');
+  }
+});
+
+/* Reset Homepage color-theme-changer */
+circleButton.addEventListener('click', () => {  
+
+    document.body.classList.remove('light-theme');
+    document.body.classList.remove('dark-theme');
+});
